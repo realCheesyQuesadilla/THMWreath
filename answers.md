@@ -12,3 +12,6 @@ https://thomaswreath.thm/
 
 #### Look back at your service scan results: what server version does Nmap detect as running here?
 MiniServ 1.890 (Webmin httpd)
+
+#### What is the CVE number for this exploit?
+CVE-2019-15107

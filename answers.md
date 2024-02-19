@@ -85,3 +85,9 @@ reuseaddr
 ./chisel client 172.16.0.5:4444 8000:172.16.0.10:80
 
 ### Sshuttle
+#### How would you use sshuttle to connect to 172.16.20.7, with a username of "pwned" and a subnet of 172.16.0.0/16
+
+
+#### What switch (and argument) would you use to tell sshuttle to use a keyfile called "priv_key" located in the current directory?
+
+#### You are trying to use sshuttle to connect to 172.16.0.100.  You want to forward the 172.16.0.x/24 range of IP addreses, but you are getting a Broken Pipe error. What switch (and argument) could you use to fix this error?

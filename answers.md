@@ -27,3 +27,9 @@ i9vT8tk3SoXXxK2P$HDIAwho9FOdd4QCecIJKwAwwh8Hwl.BdsbMOUAd3X/chSCvrmpfy.5lrLgnRVNq
 
 #### What is the full path to this file?
 /root/.ssh/id_rsa
+
+####  Which type of pivoting creates a channel through which information can be sent hidden inside another protocol?
+tunneling
+
+#### Research: Not covered in this Network, but good to know about. Which Metasploit Framework Meterpreter command can be used to create a port forward?
+portfwd

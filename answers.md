@@ -24,3 +24,6 @@ root
 
 #### What is the root user's password hash?
 i9vT8tk3SoXXxK2P$HDIAwho9FOdd4QCecIJKwAwwh8Hwl.BdsbMOUAd3X/chSCvrmpfy.5lrLgnRVNq6/6g0PxK9VqSdy47/qKXad1
+
+#### What is the full path to this file?
+/root/.ssh/id_rsa

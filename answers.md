@@ -42,3 +42,12 @@ C:\Windows\System32\drivers\etc\hosts
 
 #### How could you see which IP addresses are active and allow ICMP echo requests on the 172.16.0.x/24 network using Bash?
 for i in {1..255}; do (ping -c 1 172.16.0.${i} | grep "bytes from" &); done
+
+
+### Proxychains and FoxyProxy
+####  What line would you put in your proxychains config file to redirect through a socks4 proxy on 127.0.0.1:4242?
+socks4 127.0.0.1 4242  
+#### What command would you use to telnet through a proxy to 172.16.0.100:23?
+proxychains telnet 172.16.0.100 23
+#### You have discovered a webapp running on a target inside an isolated network. Which tool is more apt for proxying to a webapp: Proxychains (PC) or FoxyProxy (FP)?
+FP

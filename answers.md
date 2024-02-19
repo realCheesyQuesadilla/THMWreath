@@ -51,3 +51,6 @@ socks4 127.0.0.1 4242
 proxychains telnet 172.16.0.100 23
 #### You have discovered a webapp running on a target inside an isolated network. Which tool is more apt for proxying to a webapp: Proxychains (PC) or FoxyProxy (FP)?
 FP
+
+#### If you had SSH access to a server (172.16.0.50) with a webserver running internally on port 80 (i.e. only accessible to the server itself on 127.0.0.1:80), how would you forward it to port 8000 on your attacking machine? Assume the username is "user", and background the shell.
+ssh -L 8000:127.0.0.1:80 user@172.16.0.50

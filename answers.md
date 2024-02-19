@@ -3,3 +3,6 @@
   4  
 #### What OS does Nmap think is running?
 centos  
+
+#### Open the IP in your browser -- what site does the server try to redirect you to?
+https://thomaswreath.thm/

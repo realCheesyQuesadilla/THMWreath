@@ -1,2 +1,0 @@
- How many of the first 15000 ports are open on the target?  
-  4

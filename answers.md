@@ -93,3 +93,19 @@ sshuttle -r pwned@172.16.20.7 172.16.0.0/16
 
 #### You are trying to use sshuttle to connect to 172.16.0.100.  You want to forward the 172.16.0.x/24 range of IP addreses, but you are getting a Broken Pipe error. What switch (and argument) could you use to fix this error?
 -x 172.16.0.100
+
+
+
+#### Excluding the out of scope hosts, and the current host (.200), how many hosts were discovered active on the network?  
+2
+
+#### In ascending order, what are the last octets of these host IPv4 addresses? (e.g. if the address was 172.16.0.80, submit the 80)  
+100, 150
+
+#### Scan the hosts -- which one does not return a status of "filtered" for every port (submit the last octet only)?     
+150
+
+#### Let's assume that the other host is inaccessible from our current position in the network. Which TCP ports (in ascending order, comma separated) below port 15000, are open on the remaining target?  
+
+
+#### Assuming that the service guesses made by Nmap are accurate, which of the found services is more likely to contain an exploitable vulnerability?

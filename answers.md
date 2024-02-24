@@ -106,6 +106,17 @@ sshuttle -r pwned@172.16.20.7 172.16.0.0/16
 150
 
 #### Let's assume that the other host is inaccessible from our current position in the network. Which TCP ports (in ascending order, comma separated) below port 15000, are open on the remaining target?  
-
+80,3389,5985  
 
 #### Assuming that the service guesses made by Nmap are accurate, which of the found services is more likely to contain an exploitable vulnerability?
+  http
+
+### Pivoting
+#### What is the name of the program running the service?  
+gitstack
+
+#### Head to the login screen of this application. This can be done by adding the answer to the previous question on at the end of the url, e.g. if using sshuttle: http://IP/ANSWER  Do these default credentials work (Aye/Nay)?    
+Nay
+
+#### There is one Python RCE exploit for version 2.3.10 of the service. What is the EDB ID number of this exploit?  
+43777
